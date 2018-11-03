@@ -1,0 +1,15 @@
+module capacitiveSensor (
+	input 	sensorInput[3:0];
+	output 	sensorOutput[3:0];
+	output	sensorStatus[3:0];
+);
+
+
+
+
+
+
+
+
+
+endmodule

@@ -1,0 +1,26 @@
+09:51:35 **** Incremental Build of configuration x86_64-debug for project traffic_light ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/traffic_light.d,-MT,build/x86_64-debug/src/traffic_light.o -o build/x86_64-debug/src/traffic_light.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/traffic_light.c
+src/traffic_light.c: In function 'updateLights':
+src/traffic_light.c:554:18: warning: unused variable 'io_id' [-Wunused-variable]
+  struct s_io_id *io_id = &traffic_control_data->io_id;
+                  ^
+src/traffic_light.c: In function 'sensorPoll':
+src/traffic_light.c:612:18: warning: unused variable 'io_id' [-Wunused-variable]
+  struct s_io_id *io_id = &traffic_control_data->io_id;
+                  ^
+src/traffic_light.c: In function 'printTrafficState':
+src/traffic_light.c:700:2: warning: enumeration value 'GATE_CLOSED_INIT' not handled in switch [-Wswitch]
+  switch(state)
+  ^
+src/traffic_light.c:700:2: warning: enumeration value 'GATE_OPEN' not handled in switch [-Wswitch]
+src/traffic_light.c:700:2: warning: enumeration value 'GATE_CLOSED' not handled in switch [-Wswitch]
+src/traffic_light.c:700:2: warning: enumeration value 'RAIL_ERROR' not handled in switch [-Wswitch]
+src/traffic_light.c: In function 'railServer':
+src/traffic_light.c:821:30: warning: unused variable 'rail_message' [-Wunused-variable]
+  struct s_rail_message_data *rail_message =  (struct s_rail_message_data*) &rail_data->message_data;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/traffic_light   build/x86_64-debug/src/traffic_light.o  
+
+09:51:36 Build Finished (took 470ms)
+

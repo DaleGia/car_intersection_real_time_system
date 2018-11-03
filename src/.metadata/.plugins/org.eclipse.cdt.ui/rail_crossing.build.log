@@ -1,0 +1,7 @@
+10:48:30 **** Incremental Build of configuration armv7le-debug for project rail_crossing ****
+make -j4 all 
+qcc -Vgcc_ntoarmv7le -c -Wp,-MMD,build/armv7le-debug/src/rail_crossing.d,-MT,build/armv7le-debug/src/rail_crossing.o -o build/armv7le-debug/src/rail_crossing.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/rail_crossing.c
+qcc -Vgcc_ntoarmv7le -o build/armv7le-debug/rail_crossing   build/armv7le-debug/src/rail_crossing.o  
+
+10:48:30 Build Finished (took 310ms)
+
